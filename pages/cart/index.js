@@ -39,7 +39,7 @@ export default function Cart() {
             <div className='w-full h-[85vh] flex justify-center items-center flex-col gap-2 2xl:max-w-7xl 2xl:mx-auto'>
               <BsCartX className='text-8xl'/>
               <p>Your cart is empty</p>
-              <Link className='w-3/5 py-2 text-center text-[linen] bg-gray-800 rounded-lg lg:w-1/5' href='/products'>Shop</Link>
+              <Link className='px-4 py-2 text-center text-[linen] bg-gray-800 rounded-lg' href='/products'>Shop</Link>
             </div>
           :
           <>

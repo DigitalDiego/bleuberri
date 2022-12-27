@@ -30,8 +30,8 @@ export default function Home() {
           className='w-full h-full object-cover'
           src='/images/image-one.jpg'
           alt='living room with blue furniture'
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
         />
         <div className='absolute top-0 right-0 z-[1000] w-full h-full grid place-items-center'>
           <div className='flex justify-center items-center gap-2 flex-col'>
@@ -72,8 +72,8 @@ export default function Home() {
           className='w-full h-full object-cover'
           src='/images/image-two.jpg'
           alt='living room with nice furniture'
-          width={300}
-          height={300}
+          width={1000}
+          height={1000}
         />
         <div className='absolute top-0 right-0 w-full h-full grid place-items-center'>
           <div className='flex justify-center items-center flex-col gap-2'>

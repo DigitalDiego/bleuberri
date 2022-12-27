@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='w-full px-[5vw] bg-gray-800 py-[5vw] flex justify-center items-center flex-col lg:flex-row'>
+    <div className='w-full px-[5vw] bg-gray-800 py-[5vw] flex justify-center items-center flex-col lg:flex-row 2xl:py-0'>
       <div className='w-full lg:w-1/2 h-[40vh] flex justify-center lg:justify-start items-center'>
         <p className='text-4xl text-[linen] font-lobster'>BleuBerri</p>
       </div>

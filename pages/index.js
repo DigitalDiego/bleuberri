@@ -20,6 +20,7 @@ export default function Home() {
 
       <Head>
         <title>BleuBerri</title>
+        <link rel="shortcut icon" href="/bleuberri.svg" type="image/x-icon" />
       </Head>
 
       <Hero/>

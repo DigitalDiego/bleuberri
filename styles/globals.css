@@ -14,6 +14,6 @@
 
 @layer base {
   body {
-    @apply font-poppins bg-[linen] text-gray-800
+    @apply bg-gray-200 text-gray-800 font-poppins;
   }
 }

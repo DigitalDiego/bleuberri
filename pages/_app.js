@@ -1,15 +1,12 @@
-import '../styles/globals.css'
-import { CartProvider } from 'react-use-cart'
-import { Navbar, Footer } from '../components'
+import "../styles/globals.css";
+import { CartProvider } from "react-use-cart";
+import { Navbar } from "../components";
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <CartProvider>
-      <Navbar/>
+      <Navbar />
       <Component {...pageProps} />
-      <Footer/>
     </CartProvider>
-  )
+  );
 }
-
-export default MyApp

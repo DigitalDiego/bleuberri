@@ -33,10 +33,10 @@ export default function OurCommunity() {
             key={slide}
           >
             <p className="text-center w-1/2">
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
               dicta maxime eveniet cupiditate. Sunt, sint! Ullam error
               exercitationem doloribus deleniti quae tempora. Nostrum,
-              praesentium odit?"
+              praesentium odit?
             </p>
             <p className="font-bold">John Doe</p>
             <p className="underline underline-offset-2 text-sm cursor-pointer">

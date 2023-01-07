@@ -17,7 +17,7 @@ export default function Hero() {
           <div className="flex justify-center items-center gap-2 text-gray-200 flex-col">
             <p className="text-7xl font-bold">ART FOR EVERY WALL</p>
             <p className="font-['serif']">
-              Framed fine art photography from the world's most adventurous
+              Framed fine art photography from the worlds most adventurous
               artists
             </p>
             <Link href="/products" className="underline underline-offset-2">

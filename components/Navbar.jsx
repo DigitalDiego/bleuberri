@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import {
+  AiOutlineMenu,
+  AiOutlinePlus,
   AiOutlineShopping,
   AiFillShopping,
   AiOutlineSearch,
@@ -15,9 +17,14 @@ export default function Navbar() {
     <>
       <div className="w-full h-[12vh] flex justify-between items-center px-[2vw]">
         <div className="w-1/3 flex justify-start items-center gap-5">
-          <Link href="/products">Shop Prints</Link>
-          <p>Reviews</p>
-          <p>Membership</p>
+          <Link className="hidden lg:inline" href="/products">
+            Shop Prints
+          </Link>
+          <p className="hidden lg:inline">Reviews</p>
+          <p className="hidden lg:inline">Membership</p>
+          <button className="text-xl lg:hidden">
+            <AiOutlineMenu />
+          </button>
         </div>
         <div className="w-1/3 grid place-items-center">
           <Link className="font-lobster text-4xl" href="/">
@@ -25,8 +32,8 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="w-1/3 flex justify-end items-center gap-5 text-xl">
-          <AiOutlineUser />
-          <AiOutlineSearch />
+          <AiOutlineUser className="hidden lg:inline" />
+          <AiOutlineSearch className="hidden lg:inline" />
           <Link href="/cart">
             {isEmpty ? <AiOutlineShopping /> : <AiFillShopping />}
           </Link>

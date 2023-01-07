@@ -30,8 +30,8 @@ export default function Cart() {
       <Head>
         <title>BleuBerri | Cart</title>
       </Head>
-      <div className="w-full flex justify-start items-start p-[2vw]">
-        <div className="w-1/2 min-h-[80vh]">
+      <div className="w-full flex justify-start items-start p-[2vw] flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 min-h-[80vh]">
           {isEmpty ? (
             <div className="w-full h-[80vh] grid place-items-center">
               <p className="text-2xl">Your cart is empty</p>
@@ -39,8 +39,11 @@ export default function Cart() {
           ) : (
             <div className="w-full">
               {items.map((item) => (
-                <div className="w-full h-[50vh] flex" key={item.id}>
-                  <div className="w-1/3 grid place-items-center">
+                <div
+                  className="w-full h-[50vh] 2xl:h-[40vh] flex"
+                  key={item.id}
+                >
+                  <div className="w-1/2 lg:w-1/3 grid place-items-center">
                     <Image
                       className="w-4/5 h-4/5 object-cover"
                       src={item.image}
@@ -49,7 +52,7 @@ export default function Cart() {
                       height={1000}
                     />
                   </div>
-                  <div className="w-2/3 flex justify-center items-end flex-col gap-2 py-[10%]">
+                  <div className="w-1/2 lg:w-2/3 flex justify-center items-end flex-col gap-2 py-[10%]">
                     <p className="text-2xl font-bold">{item.name}</p>
 
                     <p className="text-lg">
@@ -89,8 +92,8 @@ export default function Cart() {
             </div>
           )}
         </div>
-        <div className="w-1/2 h-[80vh] grid place-items-center">
-          <div className="w-3/5 bg-gray-800 p-2 flex justify-center items-center gap-4 flex-col">
+        <div className="w-full lg:w-1/2 min-h-[40vh] lg:h-[80vh] grid place-items-center">
+          <div className="w-full lg:w-3/5 bg-gray-800 p-2 flex justify-center items-center gap-4 flex-col">
             <p className="text-gray-200 text-xl font-bold">ORDER SUMMARY</p>
             {isEmpty === false && (
               <div className="w-full flex justify-between items-center text-gray-200">

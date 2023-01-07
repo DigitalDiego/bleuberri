@@ -32,7 +32,7 @@ export default function OurCommunity() {
             className="w-full flex justify-center items-center gap-2 flex-col px-[5vw] py-[2vw]"
             key={slide}
           >
-            <p className="text-center w-1/2">
+            <p className="text-center lg:w-1/2">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
               dicta maxime eveniet cupiditate. Sunt, sint! Ullam error
               exercitationem doloribus deleniti quae tempora. Nostrum,

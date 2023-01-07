@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="w-full h-[120vh] p-[2vw]">
+    <div className="w-full h-[120vh] lg:p-[2vw]">
       <div className="relative w-full h-full">
         <Image
           className="w-full h-full object-cover"
@@ -15,8 +15,10 @@ export default function Hero() {
         />
         <div className="absolute top-0 right-0 w-full h-full bg-black/50 grid place-items-center">
           <div className="flex justify-center items-center gap-2 text-gray-200 flex-col">
-            <p className="text-7xl font-bold">ART FOR EVERY WALL</p>
-            <p className="font-['serif']">
+            <p className="text-4xl lg:text-7xl font-bold text-center">
+              ART FOR EVERY WALL
+            </p>
+            <p className="w-4/5 lg:w-auto text-sm lg:text-base font-['serif'] text-center">
               Framed fine art photography from the worlds most adventurous
               artists
             </p>

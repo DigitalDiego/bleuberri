@@ -13,15 +13,15 @@ export default function Products() {
       <div className="w-full p-[2vw]">
         <div className="w-full flex justify-center items-center flex-col gap-2 py-[2vw]">
           <p className="text-4xl font-bold">ALL PRINTS</p>
-          <p className="text-sm font-['serif']">
+          <p className="text-sm font-['serif'] text-center">
             All images are printed on premium matte artist grade paper – touting
             gallery-like quality and outstanding color.
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 gap-8 place-items-start">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-8 place-items-start">
           {data.map(({ id, image, name }) => (
             <div
-              className="flex justify-center items-center gap-2 flex-col"
+              className="w-full flex justify-center items-center gap-2 flex-col"
               key={id}
             >
               <Link className="w-full h-[250px]" href={`/products/${id}`}>

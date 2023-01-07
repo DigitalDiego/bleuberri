@@ -26,9 +26,9 @@ export default function Product({ id }) {
     router.push("/cart");
   };
   return (
-    <div className="w-full h-screen flex justify-start items-start">
-      <div className="w-1/2 h-full grid place-items-center">
-        <div className="w-4/5 grid place-items-center">
+    <div className="w-full h-screen flex justify-start items-start flex-col lg:flex-row">
+      <div className="w-full lg:w-1/2 h-full grid place-items-center">
+        <div className="w-full lg:w-4/5 grid place-items-center">
           <Image
             className="w-full h-full object-contain"
             src={item.image}
@@ -38,7 +38,7 @@ export default function Product({ id }) {
           />
         </div>
       </div>
-      <div className="w-1/2 h-full grid place-items-center">
+      <div className="w-full lg:w-1/2 h-full grid place-items-center">
         <div className="w-4/5">
           <p className="text-4xl font-bold">{item.name}</p>
           <p>{formatCurrency(item.price, "USD")}</p>
@@ -54,7 +54,7 @@ export default function Product({ id }) {
             </button>
           </div>
           <button
-            className="py-2 w-[200px] bg-gray-800 text-gray-200"
+            className="py-2 w-full lg:w-[200px] bg-gray-800 text-gray-200"
             onClick={() => addToBag(item, qty)}
           >
             Add to cart

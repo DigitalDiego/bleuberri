@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="w-full grid place-items-center font-['serif'] text-gray-500 border-t-solid border-t-[1px] border-t-gray-500 border-b-solid border-b-[1px] border-b-gray-500 py-1 text-sm">
-        <p>
+        <p className="text-center">
           Complimentary custom framing and global shipping on all orders, all
           the time.
         </p>

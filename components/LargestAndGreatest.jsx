@@ -9,7 +9,7 @@ import { formatCurrency } from "../lib";
 export default function LargestAndGreatest() {
   return (
     <div className="w-full px-[2vw] py-[5vw] flex justify-center items-center flex-col gap-8">
-      <p className="text-4xl font-bold">LARGEST AND GREATEST</p>
+      <p className="text-4xl font-bold text-center">LARGEST AND GREATEST</p>
       <div className="w-full">
         <Swiper className="lg:hidden" slidesPerView={1}>
           {data.map(({ id, name, image, price }) => (
